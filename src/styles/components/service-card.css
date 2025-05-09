@@ -1,0 +1,39 @@
+.service-card {
+  @apply w-64 bg-secondary shadow-md rounded-md overflow-hidden font-sans;
+}
+
+.service-card__image {
+  @apply object-cover h-40 w-full;
+}
+
+.service-card__content {
+  @apply p-4;
+}
+
+.service-card__title {
+  @apply text-lg font-bold text-primary mb-2;
+}
+
+.service-card__description {
+  @apply text-gray-700 text-sm;
+}
+
+.service-card__button-container {
+  @apply mt-4;
+}
+
+/* Image loading error handling */
+.service-card__image-error {
+  @apply bg-gray-100 flex items-center justify-center text-gray-500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    @apply w-full max-w-sm; /* Adjust width for smaller screens */
+  }
+
+  .service-card__image {
+    @apply h-32; /* Adjust image height for smaller screens */
+  }
+}
