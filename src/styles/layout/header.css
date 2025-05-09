@@ -1,0 +1,50 @@
+.header {
+  @apply fixed top-0 w-full bg-secondary shadow-md z-10 font-sans;
+}
+
+.nav {
+  @apply container mx-auto px-4 py-3 flex items-center justify-between;
+}
+
+.logo-link {
+  @apply flex items-center;
+}
+
+.logo-image {
+  @apply h-8 w-auto mr-2;
+}
+
+.logo-text {
+  @apply font-bold text-xl;
+}
+
+.nav-links {
+  @apply hidden md:flex items-center space-x-4;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-primary transition duration-300;
+}
+
+.mobile-menu-button {
+  @apply text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+.mobile-menu {
+  @apply absolute top-full right-0 bg-white shadow-md rounded-md mt-1 py-2 w-48;
+}
+
+.mobile-menu-link {
+  @apply block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .nav {
+    @apply px-2 py-2;
+  }
+
+  .nav-links {
+    @apply hidden;
+  }
+}
