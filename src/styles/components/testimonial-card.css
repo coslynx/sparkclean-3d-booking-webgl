@@ -1,0 +1,30 @@
+.testimonial-card {
+  @apply w-64 bg-secondary shadow-md rounded-md overflow-hidden font-sans;
+}
+
+.testimonial-card__image {
+  @apply object-cover h-40 w-full;
+}
+
+.testimonial-card__content {
+  @apply p-4;
+}
+
+.testimonial-card__title {
+  @apply text-lg font-bold text-primary mb-2;
+}
+
+.testimonial-card__text {
+  @apply text-gray-700 text-sm;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+    @apply w-full max-w-sm; /* Adjust width for smaller screens */
+  }
+
+  .testimonial-card__image {
+    @apply h-32; /* Adjust image height for smaller screens */
+  }
+}
