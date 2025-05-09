@@ -1,0 +1,44 @@
+.product-showcase-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-showcase-canvas {
+  width: 100%;
+  height: 400px; /* Define a height for aspect ratio */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: #b91c1c;
+  background-color: #fef2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.loading-message {
+  color: #3498db;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Hover effect for interactive elements */
+.product-showcase-canvas:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-showcase-canvas {
+    height: 300px; /* Adjust for smaller screens */
+  }
+}
