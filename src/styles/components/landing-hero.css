@@ -1,0 +1,169 @@
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.min-h-80vh {
+  min-height: 80vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-secondary {
+  background-color: theme('colors.secondary');
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.bg-opacity-75 {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-primary {
+  color: theme('colors.primary');
+}
+
+.bg-red-100 {
+  background-color: #fef2f2;
+}
+
+.text-red-700 {
+  color: #b91c1c;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-gray-700 {
+  color: #4b5563;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.landing-hero-container {
+  @apply relative w-full min-h-80vh flex items-center justify-center bg-secondary overflow-hidden;
+}
+
+.landing-hero-loading {
+  @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-secondary bg-opacity-75 z-20;
+}
+
+.loading-message {
+  @apply text-xl font-bold text-primary;
+}
+
+.error-message {
+  @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-red-100 text-red-700 z-20;
+}
+
+.hero-content {
+  @apply absolute inset-0 z-10 flex items-center justify-center pointer-events-none text-center;
+}
+
+.hero-heading {
+  @apply text-4xl font-bold text-primary mb-4;
+}
+
+.hero-subheading {
+  @apply text-lg text-gray-700;
+}
+
+@layer utilities {
+  .min-h-80vh {
+    min-height: 80vh;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+  .hero-subheading {
+    font-size: 1rem; /* Smaller subheading for mobile */
+  }
+}
