@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import base styles */
+@import 'src/styles/base.css';
+
+/* Import page styles */
+@import 'src/styles/pages/home.css';
+
+/* Import component styles */
+@import 'src/styles/components/landing-hero.css';
+@import 'src/styles/components/room-scene.css';
+@import 'src/styles/components/product-showcase.css';
+@import 'src/styles/components/booking-form.css';
+@import 'src/styles/components/service-card.css';
+@import 'src/styles/components/testimonial-card.css';
+
+/* Import layout styles */
+@import 'src/styles/layout/minimal-layout.css';
+@import 'src/styles/layout/footer.css';
+@import 'src/styles/layout/header.css';
