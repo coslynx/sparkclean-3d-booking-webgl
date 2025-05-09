@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true, // Enable project compilation
+    "module": "ESNext", // Specify module code generation
+    "moduleResolution": "Node", // Resolve modules using Node.js style
+    "types": ["node"] // Include type definitions for Node.js
+  },
+  "exclude": ["vite.config.ts"] // Exclude Vite configuration file
+}
