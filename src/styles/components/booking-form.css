@@ -1,0 +1,26 @@
+.booking-form-container {
+  @apply w-full max-w-lg mx-auto;
+}
+
+.booking-form-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.booking-form-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-primary;
+}
+
+.booking-form-error {
+  @apply text-red-500 text-xs italic;
+}
+
+.booking-form-button {
+  @apply rounded-md py-2 px-4 font-sans transition duration-300 hover:bg-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .booking-form-container {
+    /* Adjust for larger screens if needed */
+  }
+}
