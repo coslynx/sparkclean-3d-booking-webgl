@@ -1,0 +1,29 @@
+.homeContainer {
+  @apply bg-white font-sans;
+}
+
+.sectionLoading {
+  @apply text-center py-8 text-gray-500;
+}
+
+/* Larger screens */
+@media (min-width: theme('screens.md')) {
+  .homeContainer {
+    /* Add larger screen specific styles here, if needed */
+  }
+
+  .sectionLoading {
+    @apply text-lg; /* Larger font size on bigger screens */
+  }
+}
+
+/* Even larger screens */
+@media (min-width: theme('screens.lg')) {
+  .homeContainer {
+    /* Add even larger screen specific styles here, if needed */
+  }
+
+  .sectionLoading {
+    @apply py-12; /* Increased padding */
+  }
+}
